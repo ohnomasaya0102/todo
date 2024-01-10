@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: todo-front
+    build:
+      context: ./todo-front  
+      dockerfile: ./Dockerfile
+    environment:
+      - NODE_ENV=development
+      - PORT=5173
+    ports:
+      - 5173:5173
+    volumes:
+      - ./todo-front/src:/app/src
+      - ./todo-front/static:/app/static
+      - ./todo-front/vite.config.js:/app/vite.config.js
+      - ./todo-front/jsconfig.json:/app/jsconfig.json
+      - ./todo-front/svelte.config.js:/app/svelte.config.js
