@@ -1,25 +1,21 @@
-Todo-Front プロジェクト
-概要
-このプロジェクトは、Todoアプリケーションのフロントエンド部分を含んでおり、Svelteフレームワークで構築されています。アプリケーションはDockerを使用してコンテナ化されており、簡単なセットアップとデプロイが可能です。
-
-前提条件
-Docker
-Node.js（ローカル開発用）
-ローカル開発環境のセットアップ
-
-
-bash
-
+プロジェクトをクローンしてください。
 ```
-git clone
+git clone　git@github.com:ohnomasaya0102/todo.git
 ```
+
 プロジェクトディレクトリに移動します
+
 ```
 cd todo/todo-front
+```
+
 npm関連インストール。svelte-kitも勝手に入ってきます。
+
 ```
 npm install
 ```
+
+docker立ち上げ
 
 ```
 docker-compose up --build
